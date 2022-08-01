@@ -1,4 +1,5 @@
-import { IShell, IShellActionTypes, ShellAction } from "./index";
+import { IShell, IShellActionTypes } from "./types";
+import { ShellAction } from "./actions";
 
 const shellReducer = (state: IShell, action: ShellAction): IShell => {
   switch (action.type) {
